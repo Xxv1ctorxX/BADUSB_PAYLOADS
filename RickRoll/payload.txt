@@ -1,0 +1,134 @@
+DELAY 10
+GUI
+DELAY 50
+STRING cmd
+DELAY 30
+ENTER
+DELAY 30
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+STRING powershell -c "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+DELAY 30
+ENTER
+DELAY 30
+STRING cls
+DELAY 10
+ENTER
+DELAY 30
+STRING start "" https://www.youtube.com/watch?v=uHgt8giw1LY && exit
+DELAY 30
+ENTER
+DELAY 350
+STRING f

